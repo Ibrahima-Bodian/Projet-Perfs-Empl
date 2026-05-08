@@ -1,0 +1,151 @@
+
+<h2 class="sr-only">Mockup of the HR Analytics Executive Dashboard in Excel showing KPI cards, charts, and slicers</h2>
+
+<div style="padding: 1rem 0;">
+  <div style="background: var(--color-background-secondary); border-radius: var(--border-radius-lg); padding: 1.25rem; border: 0.5px solid var(--color-border-tertiary);">
+
+    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1.25rem;">
+      <div>
+        <p style="font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-tertiary); margin: 0;">Excel Dashboard</p>
+        <p style="font-size: 20px; font-weight: 500; color: var(--color-text-primary); margin: 4px 0 0;">Vue exécutive — HR Analytics</p>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <span style="font-size: 12px; padding: 4px 12px; border-radius: var(--border-radius-md); background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Département <i class="ti ti-chevron-down" style="font-size:12px" aria-hidden="true"></i></span>
+        <span style="font-size: 12px; padding: 4px 12px; border-radius: var(--border-radius-md); background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Tranche d'âge <i class="ti ti-chevron-down" style="font-size:12px" aria-hidden="true"></i></span>
+        <span style="font-size: 12px; padding: 4px 12px; border-radius: var(--border-radius-md); background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Genre <i class="ti ti-chevron-down" style="font-size:12px" aria-hidden="true"></i></span>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; margin-bottom: 1.25rem;">
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 11px; color: var(--color-text-secondary); margin: 0;"><i class="ti ti-users" style="font-size:13px; margin-right:4px" aria-hidden="true"></i>Effectif total</p>
+        <p style="font-size: 22px; font-weight: 500; margin: 6px 0 0; color: var(--color-text-primary);">1 470</p>
+      </div>
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 11px; color: var(--color-text-secondary); margin: 0;"><i class="ti ti-door-exit" style="font-size:13px; margin-right:4px" aria-hidden="true"></i>Taux d'attrition</p>
+        <p style="font-size: 22px; font-weight: 500; margin: 6px 0 0; color: var(--color-text-danger);">16.1%</p>
+      </div>
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 11px; color: var(--color-text-secondary); margin: 0;"><i class="ti ti-coin" style="font-size:13px; margin-right:4px" aria-hidden="true"></i>Revenu moyen</p>
+        <p style="font-size: 22px; font-weight: 500; margin: 6px 0 0; color: var(--color-text-primary);">6 503 $</p>
+      </div>
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 11px; color: var(--color-text-secondary); margin: 0;"><i class="ti ti-mood-happy" style="font-size:13px; margin-right:4px" aria-hidden="true"></i>Satisfaction moy.</p>
+        <p style="font-size: 22px; font-weight: 500; margin: 6px 0 0; color: var(--color-text-success);">2.73 / 4</p>
+      </div>
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 11px; color: var(--color-text-secondary); margin: 0;"><i class="ti ti-chart-bar" style="font-size:13px; margin-right:4px" aria-hidden="true"></i>Performance moy.</p>
+        <p style="font-size: 22px; font-weight: 500; margin: 6px 0 0; color: var(--color-text-primary);">3.15 / 4</p>
+      </div>
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 14px 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 11px; color: var(--color-text-secondary); margin: 0;"><i class="ti ti-alert-triangle" style="font-size:13px; margin-right:4px" aria-hidden="true"></i>Employés à risque</p>
+        <p style="font-size: 22px; font-weight: 500; margin: 6px 0 0; color: var(--color-text-warning);">12.4%</p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; margin-bottom: 12px;">
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 12px;">Taux d'attrition par département</p>
+        <div style="position: relative; height: 200px;">
+          <canvas id="chart1" role="img" aria-label="Bar chart showing attrition rate by department: Sales 21%, HR 19%, R&D 14%">Attrition by department bar chart</canvas>
+        </div>
+      </div>
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 12px;">Répartition des départs</p>
+        <div style="position: relative; height: 200px;">
+          <canvas id="chart2" role="img" aria-label="Doughnut chart: 84% retained, 16% departed">Retention doughnut chart</canvas>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 12px;">Attrition par tranche d'âge</p>
+        <div style="position: relative; height: 180px;">
+          <canvas id="chart3" role="img" aria-label="Bar chart of attrition rate by age group">Attrition by age group</canvas>
+        </div>
+      </div>
+      <div style="background: var(--color-background-primary); border-radius: var(--border-radius-md); padding: 16px; border: 0.5px solid var(--color-border-tertiary);">
+        <p style="font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 12px;">Satisfaction — actifs vs partis</p>
+        <div style="position: relative; height: 180px;">
+          <canvas id="chart4" role="img" aria-label="Grouped bar chart comparing satisfaction scores between active and departed employees">Satisfaction comparison chart</canvas>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; gap: 6px; margin-top: 16px;">
+      <span style="font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); background: var(--color-background-info); color: var(--color-text-info); font-weight: 500;">Accueil</span>
+      <span style="font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Vue exécutive</span>
+      <span style="font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Attrition</span>
+      <span style="font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Rémunération</span>
+      <span style="font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Satisfaction</span>
+      <span style="font-size: 11px; padding: 3px 10px; border-radius: var(--border-radius-md); border: 0.5px solid var(--color-border-tertiary); color: var(--color-text-secondary);">Profil risque</span>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const isDark = matchMedia('(prefers-color-scheme: dark)').matches;
+const gridColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+const textColor = isDark ? 'rgba(255,255,255,0.6)' : 'rgba(0,0,0,0.5)';
+
+const baseOpts = {
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: { legend: { display: false } },
+  scales: {
+    x: { grid: { display: false }, ticks: { font: { size: 11 }, color: textColor } },
+    y: { grid: { color: gridColor }, ticks: { font: { size: 11 }, color: textColor }, border: { display: false } }
+  }
+};
+
+new Chart(document.getElementById('chart1'), {
+  type: 'bar',
+  data: {
+    labels: ['Sales', 'HR', 'R&D'],
+    datasets: [{ data: [20.6, 19.0, 13.8], backgroundColor: ['#E24B4A','#EF9F27','#378ADD'], borderRadius: 4, maxBarThickness: 50 }]
+  },
+  options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => v + '%' }, max: 25 } } }
+});
+
+new Chart(document.getElementById('chart2'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Actifs', 'Départs'],
+    datasets: [{ data: [1233, 237], backgroundColor: ['#378ADD','#E24B4A'], borderWidth: 0 }]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    cutout: '65%',
+    plugins: { legend: { display: true, position: 'bottom', labels: { font: { size: 11 }, color: textColor, padding: 16, usePointStyle: true, pointStyle: 'rectRounded' } } }
+  }
+});
+
+new Chart(document.getElementById('chart3'), {
+  type: 'bar',
+  data: {
+    labels: ['18-25', '26-35', '36-45', '46-55', '55+'],
+    datasets: [{ data: [25.3, 18.2, 12.1, 10.8, 8.5], backgroundColor: '#534AB7', borderRadius: 4, maxBarThickness: 40 }]
+  },
+  options: { ...baseOpts, scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, ticks: { ...baseOpts.scales.y.ticks, callback: v => v + '%' }, max: 30 } } }
+});
+
+new Chart(document.getElementById('chart4'), {
+  type: 'bar',
+  data: {
+    labels: ['Job', 'Environ.', 'Relations', 'Work-Life'],
+    datasets: [
+      { label: 'Actifs', data: [2.78, 2.77, 2.73, 2.78], backgroundColor: '#378ADD', borderRadius: 4, maxBarThickness: 28 },
+      { label: 'Partis', data: [2.47, 2.46, 2.60, 2.66], backgroundColor: '#E24B4A', borderRadius: 4, maxBarThickness: 28 }
+    ]
+  },
+  options: {
+    ...baseOpts,
+    plugins: { legend: { display: true, position: 'bottom', labels: { font: { size: 11 }, color: textColor, padding: 16, usePointStyle: true, pointStyle: 'rectRounded' } } },
+    scales: { ...baseOpts.scales, y: { ...baseOpts.scales.y, min: 1.5, max: 3.5 } }
+  }
+});
+</script>
